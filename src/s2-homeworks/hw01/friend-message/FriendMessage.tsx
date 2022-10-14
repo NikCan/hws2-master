@@ -1,11 +1,31 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
 
+type UserType = {
+    avatar: any
+    name: string
+}
+
+type FriendMessageType = {
+    text: string
+    time: number
+}
+
+type MessageType = {
+    id: number
+    user: UserType
+    message: FriendMessageType
+}
+
+type PropsType = {
+    message: MessageType
+}
+
 // создать тип вместо any и отобразить приходящие данные
-const FriendMessage = (props: any) => {
+const FriendMessage = (props: PropsType) => {
     return (
         <div
-            id={'hw1-friend-message-' + props.message.id}
+            id={'hw1-friend-message-' + props.message.id }
             className={s.friendMessage}
         >
             <div className={s.friendImageAndText}>
