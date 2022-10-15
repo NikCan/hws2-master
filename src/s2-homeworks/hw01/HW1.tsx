@@ -17,7 +17,7 @@ import avatar from './avatar.png'
 export type MessageType = {
     id: number
     user: {
-        avatar: any
+        avatar: string
         name: string
     }
     message: {
@@ -34,7 +34,7 @@ export const message0: MessageType = {
         name: 'Bob',  // можно менять
     },
     message: {
-        text: 'Hello World!', // можно менять
+        text: 'my message', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -57,7 +57,7 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0}/>
+                    {/*<Message message={message0}/>*/}
                     <FriendMessage message={friendMessage0}/>
                 </div>
 
