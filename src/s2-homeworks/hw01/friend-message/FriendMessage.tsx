@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
-import avatar from "../avatar.png";
 import {MessageType} from "../HW1";
 
 type PropsType = {
