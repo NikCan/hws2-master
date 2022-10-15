@@ -17,10 +17,10 @@ const Message = (props: MessagePropsType) => {
                 />
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
-                        {props.message.message.text}
+                        {props.message.user.name}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        {props.message.user.name}
+                        {props.message.message.text}
                     </pre>
                 </div>
             </div>
