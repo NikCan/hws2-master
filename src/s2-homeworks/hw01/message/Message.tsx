@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './Message.module.css'
-import avatar from "../avatar.png";
 import {message0, MessageType} from "../HW1";
 // нужно создать правильный тип вместо any
 
