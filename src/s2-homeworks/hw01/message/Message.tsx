@@ -1,23 +1,7 @@
 import React from 'react'
 import s from './Message.module.css'
-
+import {MessageType} from "../HW1";
 // нужно создать правильный тип вместо any
-
-type UserType = {
-    avatar: any
-    name: string
-}
-
-type Message0Type = {
-    text: string
-    time: number
-}
-
-type MessageType = {
-    id: number
-    user: UserType
-    message: Message0Type
-}
 
 type MessagePropsType = {
     message: MessageType
