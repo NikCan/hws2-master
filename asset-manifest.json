@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/NikCan/hws2-master/static/css/main.3b4a9c77.css",
-    "main.js": "/NikCan/hws2-master/static/js/main.1846b5e9.js",
+    "main.js": "/NikCan/hws2-master/static/js/main.5e006922.js",
     "static/js/787.66cb4309.chunk.js": "/NikCan/hws2-master/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/NikCan/hws2-master/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/NikCan/hws2-master/index.html",
     "main.3b4a9c77.css.map": "/NikCan/hws2-master/static/css/main.3b4a9c77.css.map",
-    "main.1846b5e9.js.map": "/NikCan/hws2-master/static/js/main.1846b5e9.js.map",
+    "main.5e006922.js.map": "/NikCan/hws2-master/static/js/main.5e006922.js.map",
     "787.66cb4309.chunk.js.map": "/NikCan/hws2-master/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b4a9c77.css",
-    "static/js/main.1846b5e9.js"
+    "static/js/main.5e006922.js"
   ]
 }
