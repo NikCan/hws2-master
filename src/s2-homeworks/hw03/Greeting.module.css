@@ -1,7 +1,10 @@
 .greetingForm {
+    margin-bottom: 100px;
+    margin-top: 10px;
 }
 
 .inputAndButtonContainer {
+    /*display: flex;*/
 }
 
 .error {
@@ -14,9 +17,11 @@
 }
 
 .errorInput {
+    border: 1px solid red;
 }
 
 .button {
+
 }
 
 .button:focus {
@@ -29,7 +34,9 @@
 }
 
 .text {
+
 }
 
 .greeting {
+
 }
