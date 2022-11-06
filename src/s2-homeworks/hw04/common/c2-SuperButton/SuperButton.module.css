@@ -9,8 +9,9 @@
 }
 
 .disabled {
+    background: #004D99;
     opacity: 0.5;
-    color: black;
+    color: #002E5C;
 }
 
 .secondary {
@@ -54,7 +55,5 @@
 }
 
 .button:disabled {
-    background: #004D99;
-    opacity: 0.5;
-    color: #002E5C;
+
 }
