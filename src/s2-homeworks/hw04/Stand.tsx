@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import s from './Stand.module.css'
 import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
@@ -62,6 +62,7 @@ const Stand = () => {
                     >
                         disabled
                     </SuperButton>
+
                 </div>
                 {/*задизэйбленная кнопка:*/}
                 <div>
@@ -82,7 +83,7 @@ const Stand = () => {
                         checked={stateForAllCheckboxes}
                         onChangeChecked={setChecked}
                     >
-                        some text
+                        Hometask
                     </SuperCheckbox>
                 </div>
                 {/*совместим со старым кодом:*/}

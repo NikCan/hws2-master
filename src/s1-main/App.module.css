@@ -1,9 +1,17 @@
 .App {
     --header_height: 60px;
+    padding: 50px;
+    width: 1000px;
 }
 
 .hw {
+    display: flex;
+    flex-direction: column;
+}
 
+.hwMain {
+    display: flex;
+    flex-direction: column;
 }
 
 .hwTitle {
