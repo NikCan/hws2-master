@@ -54,7 +54,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         Junior Plus
                     </NavLink>
                 </nav>
-                <div>Hometask №5</div>
             </aside>
         </>
     )
