@@ -17,6 +17,7 @@ function Pages() {
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
+                <Route path={"/"} element={<Navigate to={PATH.PRE_JUNIOR}/>}></Route>
                 <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}></Route>
                 <Route path={PATH.JUNIOR} element={<Junior/>}></Route>
                 <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}></Route>

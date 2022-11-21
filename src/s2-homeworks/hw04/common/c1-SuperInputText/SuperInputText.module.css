@@ -4,9 +4,10 @@
 .input {
     width: 372px;
     height: 36px;
-
+    outline: none;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
 .inputWrapper {

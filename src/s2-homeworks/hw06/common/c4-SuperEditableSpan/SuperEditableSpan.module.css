@@ -2,9 +2,12 @@
 }
 
 .span {
+    color: #0080FF
 }
 
 .input {
+    outline: none;
+
 }
 
 .pen {
