@@ -1,12 +1,16 @@
 .App {
     --header_height: 60px;
     padding: 50px;
-    width: 1000px;
+    width: 100%;
 }
 
 .hw {
     display: flex;
     flex-direction: column;
+    padding-bottom: 200px;
+    padding-right: 100px;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100vw;
 }
 
 .hwMain {

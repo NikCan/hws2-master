@@ -4,7 +4,7 @@
 }
 
 .sidebar.open {
-    position: absolute;
+    position: fixed;
     width: 317px;
     height: 100%;
     left: 0px;
@@ -16,7 +16,11 @@
 }
 
 .background {
-
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: gray;
+    opacity: 50%;
 }
 
 .nav {
@@ -48,4 +52,5 @@
 }
 
 .close img {
+    cursor: pointer;
 }
