@@ -2,7 +2,7 @@ import React, {
     ChangeEvent,
     InputHTMLAttributes,
     DetailedHTMLProps,
-    HTMLAttributes, useState,
+    HTMLAttributes,
 } from 'react'
 import s from './SuperRadio.module.css'
 
