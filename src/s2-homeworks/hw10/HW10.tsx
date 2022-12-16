@@ -1,7 +1,7 @@
 import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import store, {AppStoreType} from './bll/store'
-import {initStateType, loadingAC} from './bll/loadingReducer'
+import {AppStoreType} from './bll/store'
+import {loadingAC} from './bll/loadingReducer'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s2 from '../../s1-main/App.module.css'
 import {Loader} from './Loader'
@@ -15,9 +15,8 @@ import {Loader} from './Loader'
 
 const HW10 = () => {
     const dispatch = useDispatch()
-    const isLoading = useSelector<AppStoreType>(store => store.loading.isLoading)
+    const isLoading = useSelector<AppStoreType>(state => state.loading.isLoading)
     // useSelector, useDispatch // пишет студент
-    // const isLoading = false
     console.log(isLoading)
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         dispatch(loadingAC(true))
