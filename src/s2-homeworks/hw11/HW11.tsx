@@ -12,19 +12,15 @@ import SuperRange from './common/c7-SuperRange/SuperRange'
 
 function HW11() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
-    const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 60))
+    const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
 
     const change = (event: Event, value: number | number[]) => {
-        if (typeof value === "object") {
+        if (Array.isArray(value)) {
             const [a, b] = [...value]
             setValue1(a)
             setValue2(b)
-        }
-        if (typeof value === "number") {
-            setValue1(value as number)
-        }
-        
+        } else setValue1(value as number)
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
     }
 
