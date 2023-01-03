@@ -1,7 +1,12 @@
 .buttonsContainer {
+    display: flex;
 }
 
+
 .responseContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
 
 .imageContainer {
@@ -10,7 +15,8 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
+    margin: 20px;
 }
 
 .code {
@@ -18,5 +24,6 @@
 
 .text {
 }
+
 .info {
 }
