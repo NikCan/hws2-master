@@ -36,27 +36,28 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data.errorText + res.data.info)
+                setText(res.data.errorText)
+                setInfo(res.data.info)
             })
             .catch((e) => {
                 if (e.response.status === 400) {
                     setCode('Ошибка 400!')
                     setImage(error400)
-                    setText(e.response.data.errorText + e.response.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 }
                 if (e.response.status === 500) {
                     setCode('Ошибка 500!')
                     setImage(error500)
-                    setText(e.response.data.errorText + e.response.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 }
                 if (e.response.status === 0) {
                     setCode('Error!')
                     setImage(errorUnknown)
-                    setText(e.message + e.name)
+                    setText(e.message)
+                    setInfo(e.name)
                 }
-            })
-            .finally(() => {
-                setInfo("")
             })
     }
 
@@ -70,7 +71,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        disabled={!!info}
+                        disabled={info === "...loading"}
                         // дописать
                     >
                         Send true
@@ -79,7 +80,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
-                        disabled={!!info}
+                        disabled={info === "...loading"}
                         // дописать
 
                     >
@@ -89,7 +90,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
-                        disabled={!!info}
+                        disabled={info === "...loading"}
                         // дописать
 
                     >
@@ -99,7 +100,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
-                        disabled={!!info}
+                        disabled={info === "...loading"}
                         // дописать
 
                     >
